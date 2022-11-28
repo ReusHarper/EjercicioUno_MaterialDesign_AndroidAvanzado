@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subititulo_uno"
+            android:title="Material Design">
+            <menu>
+                <item
+                    android:id="@+id/contraint_layout"
+                    android:icon="@drawable/ic_baseline_description_24"
+                    android:title="@string/constraint_layout" />
+                <item
+                    android:id="@+id/nestedscrollview"
+                    android:icon="@drawable/ic_baseline_school_24"
+                    android:title="@string/nestedscrollview" />
+                <item
+                    android:id="@+id/collapsing"
+                    android:icon="@drawable/ic_launcher_background"
+                    android:title="@string/collapsingtoolbarlayout" />
+                <item
+                    android:id="@+id/streaming"
+                    android:icon="@drawable/circulo"
+                    android:title="@string/streaming" />
+                <item
+                    android:id="@+id/mp3_player"
+                    android:icon="@drawable/ic_baseline_corporate_fare_24"
+                    android:title="@string/mp3_player" />
+            </menu>
+        </item>
+    </group>
+</menu>

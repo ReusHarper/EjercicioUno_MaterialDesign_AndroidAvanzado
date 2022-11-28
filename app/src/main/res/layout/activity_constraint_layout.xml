@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayout">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/libreria_img0"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/libreria"
+            android:scaleType="fitXY"
+            android:src="@drawable/libreria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/libreria_img1"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="104dp"
+            android:background="@drawable/myrect"
+            android:contentDescription="@string/data_analysis"
+            android:elevation="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/libreria_img1"
+            android:translationZ="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/libreria_img0" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/genero_educacion"
+            app:layout_constraintEnd_toStartOf="@+id/libreria_img1"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/libreria_img0"
+            app:srcCompat="@drawable/ic_baseline_school_24" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/python_for_data_analysis"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/libreria_img1"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/libreria_img0" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/idioma_ingl_s"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:text="@string/ebook"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/libreria_img0" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_sico_250_00"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="196dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/libreria_img0" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/texto_libro"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+        <View
+            android:id="@+id/divider_dos"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="236dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonRelacionados"
+            android:layout_width="235dp"
+            android:layout_height="61dp"
+            android:backgroundTint="#5252FF"
+            android:contentDescription="@string/edicion"
+            android:src="@drawable/ic_baseline_groups_2_24"
+            app:layout_constraintBottom_toBottomOf="@+id/floatingActionButtonCategoria"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButtonEditorial"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButtonCategoria" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonEditorial"
+            android:layout_width="235dp"
+            android:layout_height="61dp"
+            android:backgroundTint="#5252FF"
+            android:contentDescription="@string/ediciondos"
+            android:src="@drawable/ic_baseline_corporate_fare_24"
+            app:layout_constraintBottom_toBottomOf="@+id/floatingActionButtonRelacionados"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButtonRelacionados" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonCategoria"
+            android:layout_width="235dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#5252FF"
+            android:contentDescription="@string/ediciontres"
+            android:src="@drawable/ic_baseline_school_24"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButtonRelacionados"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider_dos" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/categoria"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/floatingActionButtonCategoria"
+            app:layout_constraintStart_toStartOf="@+id/floatingActionButtonCategoria"
+            app:layout_constraintTop_toBottomOf="@id/divider_dos"
+            app:layout_constraintVertical_bias="0.94" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/relacionados"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/floatingActionButtonRelacionados"
+            app:layout_constraintStart_toStartOf="@+id/floatingActionButtonRelacionados"
+            app:layout_constraintTop_toBottomOf="@+id/divider_dos"
+            app:layout_constraintVertical_bias="0.95" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/editorial"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/floatingActionButtonEditorial"
+            app:layout_constraintStart_toStartOf="@+id/floatingActionButtonEditorial"
+            app:layout_constraintTop_toBottomOf="@+id/divider_dos"
+            app:layout_constraintVertical_bias="0.94" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

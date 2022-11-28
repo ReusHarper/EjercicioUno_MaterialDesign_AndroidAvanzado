@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">ModuloSiete</string>
+    <string name="dispositivos_moviles_8">Dispositivos Moviles 8</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="streaming">Streaming</string>
+    <string name="mp3_player">Mp3 Player</string>
+    <string name="titulo_barra">Modulo 7 de Android</string>
+    <string name="logo_unam">Logo UNAM</string>
+    <string name="abrir">Abrir</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="libreria">Libreria</string>
+    <string name="data_analysis">Data Analysis</string>
+    <string name="python_for_data_analysis">Python for Data Analysis</string>
+    <string name="idioma_ingl_s">Idioma: Inglés</string>
+    <string name="genero_educacion">Genero educacion</string>
+    <string name="ebook">eBooK $180.00</string>
+    <string name="f_sico_250_00">Físico $250.00</string>
+    <string name="texto_libro">Get complete instructions for manipulating, processing, cleaning, and crunching datasets in Python. Updated for Python 3.6,
+        the second edition of this hands-on guide is packed with practical case studies that show you how to solve a broad set of data
+        analysis problems effectively. You’ll learn the latest versions of pandas, NumPy, IPython, and Jupyter in the process.
+    </string>
+    <string name="edicion">Edicion</string>
+    <string name="ediciondos">Edicion 1</string>
+    <string name="ediciontres">Edicion2</string>
+    <string name="categoria">Categoria</string>
+    <string name="editorial">Editorial</string>
+    <string name="relacionados">Relacionados</string>
+    <string name="nestedscrollview">NestedScrollView</string>
+    <string name="material_design">Material Design</string>
+    <string-array name="lenguajes">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Ruby</item>
+    </string-array>
+    <string name="xbox">Consola XBOX</string>
+    <string name="datos">
+        Play hundreds of high-quality PC games with friends including new day one titles and get an EA Play membership.
+        With games added all the time, you always have something new to play. Join now to get your first month for $1.
+        Sign in for your available offers. Promotional offers may not be valid for all members and are only available
+        for a limited time. Offers not valid in Russia and Turkey; other geographic restrictions may apply. Credit card
+        required. After any promotional period, subscription continues automatically at regular price unless canceled.
+        New subscribers only. Limits, terms, and exclusions apply. Games catalog varies. xbox.com/gamepass.
+        Game Pass Availability Notice:
+        Game titles, number, features, and availability vary over time, by region and platform. See the current
+        game library at https://www.xbox.com/xbox-game-pass/games. Learn more about supported regions at
+        https://www.xbox.com/regions.
+        About Recurring Billing:
+        By subscribing you are authorizing recurring payments made to Microsoft at the intervals you selected,
+        until cancelled. To stop being charged, cancel your subscription in your Microsoft account
+        (account.microsoft.com/services) or on your Xbox console, before the next billing date.
+        Charges may be increased on at least 30 days notice as described in the Microsoft Store Terms of Sale
+    </string>
+    <string name="compra">Compra</string>
+    <string name="xbox_imagen">xbox imagen</string>
+    <string name="serie_x">Serie X</string>
+    <string name="logo_compra">logo compra</string>
+    <string name="collapsingtoolbarlayout">Collapsingtoolbarlayout</string>
+    <string name="imagen_pelicula">Imagen Pelicula</string>
+    <string name="canciones_mp3">Canciones MP3</string>
+</resources>
