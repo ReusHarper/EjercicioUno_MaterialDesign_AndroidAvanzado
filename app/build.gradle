@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -38,6 +39,10 @@ android {
 }
 
 dependencies {
+    // Versions
+    def v_navigation = "2.5.3"
+    def v_firebase_auth = "21.1.0"
+    def v_firebase_analytics = "21.2.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
@@ -46,4 +51,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation "androidx.navigation:navigation-fragment-ktx:$v_navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$v_navigation"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-auth-ktx:$v_firebase_auth"
+    implementation "com.google.firebase:firebase-analytics-ktx:$v_firebase_analytics"
 }

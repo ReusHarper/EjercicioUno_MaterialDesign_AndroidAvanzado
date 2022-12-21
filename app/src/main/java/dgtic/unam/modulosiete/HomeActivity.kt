@@ -1,5 +1,6 @@
 package dgtic.unam.modulosiete
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,12 +12,30 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+enum class ProviderType {
+    BASIC,
+    CORREO,
+    GOOGLE,
+    FACEBOOK
+}
+
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
     private lateinit var drawer: DrawerLayout
+    private lateinit var email: String
+    private lateinit var providerType: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Recoleccion de datos pasados
+        val bundle = intent.extras
+        email = bundle?.getString("email").toString()
+        providerType = bundle?.getString("provider").toString()
+        setup(email ?: "", providerType ?: "")
         inicioToolsBar()
     }
     private fun inicioToolsBar(){
@@ -53,8 +72,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.mp3_player->{
                 startActivity(Intent(this, Mp3Player::class.java))
             }
+            R.id.logout->{
+                // Se limpian las credencias de sesion
+                val preferencias = getSharedPreferences(getString(R.string.file_preferencia), Context.MODE_PRIVATE).edit()
+                preferencias.clear()
+                preferencias.apply()
+
+                // Cierre de sesión por Firebase y retorno a vista inicial
+                FirebaseAuth.getInstance().signOut()
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
+    }
+    // Comprobacion de correo y metodo de ingreso
+    private fun setup(email: String, providerType: String) {
+        //binding.emailTextView.text = email
+        //binding.providerTextView.text = providerType
+
+        // Se almacenan los datos de inicio de sesion
+        val preferencias = getSharedPreferences(getString(R.string.file_preferencia), Context.MODE_PRIVATE).edit()
+        preferencias.putString("email", email)
+        preferencias.putString("proovedor", providerType)
+        preferencias.apply()
     }
 }
